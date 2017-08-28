@@ -1,0 +1,17 @@
+
+
+./sqlite_energy.sh: line 52: ./db_bench_sqlite3: Permission denied
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+./sqlite_energy.sh: line 53: ./db_bench_sqlite3: Permission denied
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+./sqlite_energy.sh: line 54: ./db_bench_sqlite3: Permission denied
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s

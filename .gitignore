@@ -1,7 +1,6 @@
 *.aux
 *.acn
 *.ist
-*.log
 *.out
 *.fls
 *.bbl
