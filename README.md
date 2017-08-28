@@ -1,5 +1,5 @@
-# ase17
-ASE 2017 supplementary material for paper "Transfer Learning for Performance Modeling of Configurable Systems: An Exploratory Analysis"
+# An Empirical Study of Transfer Learning for Performance Modeling
+This repository contains the supplementary materials (data, scripts, results, etc) of our empirical study on the similarities of performance measurements across environments, this research shed some lights on transfer learning for performance modeling and analysis of highly configurable software systems. The results are presented in our paper "Transfer Learning for Performance Modeling of Configurable Systems: An Exploratory Analysis" (ASE 2017) by Pooyan Jamshidi, Norbert Siegmund, Miguel Velez, Christian Kaestner, Akshay Patel, and Yuvraj Agarwal.
 
 
 ### Citing the paper
@@ -23,4 +23,4 @@ If you have a question or feedback, please send us an email:
 
 ## Licence
 
-The data is published under the [MIT License](https://github.com/pooyanjamshidi/ase17/blob/master/LICENSE).    
+The data is published under the [MIT License](https://github.com/pooyanjamshidi/ase17/blob/master/License).    
