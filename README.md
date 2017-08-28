@@ -23,4 +23,4 @@ If you have a question or feedback, please send us an email:
 
 ## Licence
 
-The data is published under the [MIT License](https://github.com/pooyanjamshidi/ase17/blob/master/LICENSE.txt).    
+The data is published under the [MIT License](https://github.com/pooyanjamshidi/ase17/blob/master/LICENSE).    
