@@ -1,3 +1,6 @@
+%% This is an implementation of linear shift TL based on 
+% "P. Valov, J.-C. Petkovich, J. Guo, S. Fischmeister, and K. Czarnecki. Transferring performance prediction models across different hardware platforms. In Proc. Int?l Conf. on Performance Engineering (ICPE), pages 39?50. ACM, 2017."
+
 clear
 
 exp = 'sac_nbody';
@@ -214,8 +217,7 @@ end
 
 save(['results/ase/tl/waterloo_' exp '.mat'],'err*','result')
 
-
-% analysis
+%% analysis
 for idx = 1:8
 for i = 1:iter
 err_all = err_wt_map{:,:,i,idx};
