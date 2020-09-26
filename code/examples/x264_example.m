@@ -6,7 +6,6 @@ addpath('.\code\util\csv_write_headers\')
 addpath('.\code\tl\')
 addpath('.\code\dataproc\')
 addpath('.\code\analysis\')
-addpath('.\experiments\x264\toMeasure\configurations.mat')
 
 % Because x264 has 16 boolean configuration options, with a total of 2^16
 % possible configurations, a random sample of possible configurations is
