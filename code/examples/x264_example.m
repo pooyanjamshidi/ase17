@@ -6,6 +6,7 @@ addpath('.\code\util\csv_write_headers\')
 addpath('.\code\tl\')
 addpath('.\code\dataproc\')
 addpath('.\code\analysis\')
+addpath('.\experiments\x264\toMeasure\configurations.mat')
 
 % Because x264 has 16 boolean configuration options, with a total of 2^16
 % possible configurations, a random sample of possible configurations is
@@ -14,7 +15,10 @@ addpath('.\code\analysis\')
 % generates n configurations. Output is stored as both the string arguments
 % to be passed to parsec for measurement, as well as a configuration.m file
 % containing boolean encodings for each configuration.
-generate_configurations_x264(4000)
+
+% NOTE: running this will OVERWRITE the configurations used in the
+% original analysis. We will leave this commented out for now:
+% generate_configurations_x264(4000)
 
 % Measurements should now be collected using the same generated
 % configurations across different environments. For x264, we store these in
@@ -25,9 +29,9 @@ generate_configurations_x264(4000)
 
 % Once measurements are collected, configurations can be joined with
 % their average encoding times in each environment and stored in a csv for
-% later use. Output will be stored in ./data/processed/x264/x264.csv
+% later use. Output will be stored in ./data/processed/x264.csv
 data_x264
 
-% Analysis of the metrics use for our research questions can be run with
-% `proc_x264`
+% Analysis of the metrics used for our research questions can be run with
+% `proc_x264`. Output will be a latex table stored in variable `latex`.
 proc_x264
