@@ -5,7 +5,7 @@ number_of_treatment_disagreed = 0;
 
 number_of_significant_source = 0;
 number_of_significant_target = 0;
-number_of_significant_insignificant = 0;
+%number_of_significant_insignificant = 0;
 
 ss = zeros(1,size(config,2));
 tt = zeros(1,size(config,2));
@@ -60,9 +60,9 @@ for i = 1:d
         tt(xi) = 1;
     end
     
-    if (h_source==1 && h_target==0) || (h_source==0 && h_target==1)
-        number_of_significant_insignificant=number_of_significant_insignificant+1;
-    end
+%     if (h_source==1 && h_target==0) || (h_source==0 && h_target==1)
+%         number_of_significant_insignificant=number_of_significant_insignificant+1;
+%     end
     
     if  h_source==1 && h_target==1 % significant on both source and target
         if sign(effect_on_source)==sign(effect_on_target)
@@ -73,5 +73,5 @@ for i = 1:d
     end    
 end
 
-summary_results = [number_of_significant_source, number_of_significant_target,number_of_significant_insignificant,...
+summary_results = [number_of_significant_source, number_of_significant_target,...#number_of_significant_insignificant,...
     number_of_treatment_agreed, number_of_treatment_disagreed];

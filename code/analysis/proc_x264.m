@@ -528,7 +528,7 @@ corr_pear_hardware_workload_version kl_hardware_workload_version corr_spear_hard
 ];
 
 % Set column labels (use empty string for no label):
-input.tableColLabels = {'M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','M12','M13','M14','M15','M16','M17','M18','M19','M20'};
+input.tableColLabels = {'M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','M12','M13','M14','M15','M16','M17','M18'};
 % Set row labels (use empty string for no label):
 input.tableRowLabels = {'ec1:[h2 $\rightarrow$ h1, w3, v3]',...
                         'ec2:[h2 $\rightarrow$ h1, w1, v3]',...
@@ -545,7 +545,7 @@ input.transposeTable = 0;
 % Determine whether input.dataFormat is applied column or row based:
 input.dataFormatMode = 'column'; % use 'column' or 'row'. if not set 'colum' is used
 
-input.dataFormat = {'%.3f',20}; % three digits precision
+input.dataFormat = {'%.3f',18}; % three digits precision
 
 % Define how NaN values in input.tableData should be printed in the LaTex table:
 input.dataNanString = '-';
