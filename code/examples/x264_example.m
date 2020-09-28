@@ -1,8 +1,6 @@
 % run from .../ase17/ (the top level directory of this repository)
 % see ./doc/x264_example_workflow.pdf for a visualization
 addpath('.\code\util\')
-addpath('.\code\util\eliduenisch-latexTable-5212622\')
-addpath('.\code\util\csv_write_headers\')
 addpath('.\code\tl\')
 addpath('.\code\dataproc\')
 addpath('.\code\analysis\')
@@ -28,8 +26,8 @@ addpath('.\code\analysis\')
 
 % Once measurements are collected, configurations can be joined with
 % their average encoding times in each environment and stored in a csv for
-% later use. Output will be stored in ./data/processed/x264.csv
-data_x264
+% later use. Output will be stored in ./data/processed/new_x264.csv
+% data_x264 
 
 % Analysis of the metrics used for our research questions can be run with
 % `proc_x264`. Output will be a latex table stored in variable `latex`.
