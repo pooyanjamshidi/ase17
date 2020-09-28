@@ -1,4 +1,4 @@
-load('../../experiments/x264/toMeasure_15april2017/configurations.mat');
+load('.\experiments\x264\toMeasure\configurations.mat');
 parameters = {'non-deterministic','no-asm','no-mixed-refs','no-chroma-me',...
     'no-8x8dct','no-fast-pskip','no-dct-decimate',...
     'no-scenecut','no-cabac','no-deblock','no-mbtree',...
@@ -13,33 +13,33 @@ responses = {'encoding_time_feature1_2762_8','encoding_time_feature1_2762_32','e
     };
 num_of_options = length(parameters);
 
-encoding_time_feature1_2762_8 = preproc_x264('../../experiments/x264/measurements/2/feature1/featurewise.results_eledream_640x360_8');
-encoding_time_feature1_2762_32 = preproc_x264('../../experiments/x264/measurements/2/feature1/featurewise.results_eledream_640x360_32');
-encoding_time_feature1_2762_128 = preproc_x264('../../experiments/x264/measurements/2/feature1/featurewise.results_eledream_640x360_128');
+encoding_time_feature1_2762_8 = preproc_x264('.\data\raw\x264\feature1\featurewise.results_eledream_640x360_8');
+encoding_time_feature1_2762_32 = preproc_x264('.\data\raw\x264\feature1\featurewise.results_eledream_640x360_32');
+encoding_time_feature1_2762_128 = preproc_x264('.\data\raw\x264\feature1\featurewise.results_eledream_640x360_128');
 
-encoding_time_feature8_2762_8 = preproc_x264('../../experiments/x264/measurements/2/feature8/featurewise.results_eledream_640x360_8');
-encoding_time_feature8_2762_32 = preproc_x264('../../experiments/x264/measurements/2/feature8/featurewise.results_eledream_640x360_32');
-encoding_time_feature8_2762_128 = preproc_x264('../../experiments/x264/measurements/2/feature8/featurewise.results_eledream_640x360_128');
+encoding_time_feature8_2762_8 = preproc_x264('.\data\raw\x264\feature8\featurewise.results_eledream_640x360_8');
+encoding_time_feature8_2762_32 = preproc_x264('.\data\raw\x264\feature8\featurewise.results_eledream_640x360_32');
+encoding_time_feature8_2762_128 = preproc_x264('.\data\raw\x264\feature8\featurewise.results_eledream_640x360_128');
 
-encoding_time_feature9_2389_8 = preproc_x264('../../experiments/x264/measurements/2/feature9/featurewise.results_eledream_640x360_8');
-encoding_time_feature9_2389_32 = preproc_x264('../../experiments/x264/measurements/2/feature9/featurewise.results_eledream_640x360_32');
-encoding_time_feature9_2389_128 = preproc_x264('../../experiments/x264/measurements/2/feature9/featurewise.results_eledream_640x360_128');
+encoding_time_feature9_2389_8 = preproc_x264('.\data\raw\x264\feature9\featurewise.results_eledream_640x360_8');
+encoding_time_feature9_2389_32 = preproc_x264('.\data\raw\x264\feature9\featurewise.results_eledream_640x360_32');
+encoding_time_feature9_2389_128 = preproc_x264('.\data\raw\x264\feature9\featurewise.results_eledream_640x360_128');
 
-encoding_time_feature10_2744_8 = preproc_x264('../../experiments/x264/measurements/2/feature10/featurewise.results_eledream_640x360_8');
-encoding_time_feature10_2744_32 = preproc_x264('../../experiments/x264/measurements/2/feature10/featurewise.results_eledream_640x360_32');
-encoding_time_feature10_2744_128 = preproc_x264('../../experiments/x264/measurements/2/feature10/featurewise.results_eledream_640x360_128');
+encoding_time_feature10_2744_8 = preproc_x264('.\data\raw\x264\feature10\featurewise.results_eledream_640x360_8');
+encoding_time_feature10_2744_32 = preproc_x264('.\data\raw\x264\feature10\featurewise.results_eledream_640x360_32');
+encoding_time_feature10_2744_128 = preproc_x264('.\data\raw\x264\feature10\featurewise.results_eledream_640x360_128');
 
-encoding_time_azure_2762_8 = preproc_x264('../../experiments/x264/measurements/2/azure/featurewise.results_eledream_640x360_8');
-encoding_time_azure_2762_32 = preproc_x264('../../experiments/x264/measurements/2/azure/featurewise.results_eledream_640x360_32');
-encoding_time_azure_2762_128 = preproc_x264('../../experiments/x264/measurements/2/azure/featurewise.results_eledream_640x360_128');
+encoding_time_azure_2762_8 = preproc_x264('.\data\raw\x264\azure\featurewise.results_eledream_640x360_8');
+encoding_time_azure_2762_32 = preproc_x264('.\data\raw\x264\azure\featurewise.results_eledream_640x360_32');
+encoding_time_azure_2762_128 = preproc_x264('.\data\raw\x264\azure\featurewise.results_eledream_640x360_128');
 
-encoding_time_amazon_nano_2762_8 = preproc_x264('../../experiments/x264/measurements/2/amazon_nano/featurewise.results_eledream_640x360_8');
-encoding_time_amazon_nano_2762_32 = preproc_x264('../../experiments/x264/measurements/2/amazon_nano/featurewise.results_eledream_640x360_32');
-encoding_time_amazon_nano_2762_128 = preproc_x264('../../experiments/x264/measurements/2/amazon_nano/featurewise.results_eledream_640x360_128');
+encoding_time_amazon_nano_2762_8 = preproc_x264('.\data\raw\x264\amazon_nano\featurewise.results_eledream_640x360_8');
+encoding_time_amazon_nano_2762_32 = preproc_x264('.\data\raw\x264\amazon_nano\featurewise.results_eledream_640x360_32');
+encoding_time_amazon_nano_2762_128 = preproc_x264('.\data\raw\x264\amazon_nano\featurewise.results_eledream_640x360_128');
 
-encoding_time_amazon_amazon_micro_2762_8 = preproc_x264('../../experiments/x264/measurements/2/amazon_micro/featurewise.results_eledream_640x360_8');
-encoding_time_amazon_amazon_micro_2762_32 = preproc_x264('../../experiments/x264/measurements/2/amazon_micro/featurewise.results_eledream_640x360_32');
-encoding_time_amazon_amazon_micro_2762_128 = preproc_x264('../../experiments/x264/measurements/2/amazon_micro/featurewise.results_eledream_640x360_128');
+encoding_time_amazon_amazon_micro_2762_8 = preproc_x264('.\data\raw\x264\amazon_micro\featurewise.results_eledream_640x360_8');
+encoding_time_amazon_amazon_micro_2762_32 = preproc_x264('.\data\raw\x264\amazon_micro\featurewise.results_eledream_640x360_32');
+encoding_time_amazon_amazon_micro_2762_128 = preproc_x264('.\data\raw\x264\amazon_micro\featurewise.results_eledream_640x360_128');
 
 
 x264 = [configurations ...
@@ -60,4 +60,4 @@ for i = 1:length(configurations)
     end
 end
 
-csvwrite_with_headers('x264.csv',x264,[parameters,responses])
+csvwrite_with_headers('.\data\processed\new_x264.csv',x264,[parameters,responses])
