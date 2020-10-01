@@ -20,6 +20,10 @@ for i = 1:length(workload_files)
     ['inference_time_w' int2str(i)];
   responses = [responses workload(:,16)];
 end
+% remove unused variables
+clear i
+clear workload
+clear workload_files
 
 % write processed data to csv with headers
 writetable([configurations responses], '.\data\processed\inceptionv3.csv', ...
