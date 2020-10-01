@@ -1,4 +1,4 @@
-function [configurations] = generate_configurations_inceptionv3(fileIn)
+function [configurations] = extract_configurations_inceptionv3(fileIn)
 %PREPROC_INCEPTIONV3 extract configurations from inceptionv3 data
 %   Given a file for inceptionv3 data yeilds a table of one-hot-encoded 
 %   configurations.
