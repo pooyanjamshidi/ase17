@@ -1,6 +1,6 @@
-function [configurations] = extract_configurations_inceptionv3(fileIn)
-%PREPROC_INCEPTIONV3 extract configurations from inceptionv3 data
-%   Given a file for inceptionv3 data yeilds a table of one-hot-encoded 
+function [configurations] = extract_configurations_flexibo(fileIn)
+%PREPROC_FLEXIBO extract configurations from flexibo data
+%   Given a file for flexibo data yeilds a table of one-hot-encoded 
 %   configurations.
 table = readtable(fileIn);
 
